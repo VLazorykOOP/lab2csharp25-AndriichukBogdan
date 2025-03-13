@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab2Charp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abb4566598267217d10056597e4f447817271eca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d00545fe193bb7d7cfa4574ff07ec201884a7510")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab2Charp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab2Charp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
