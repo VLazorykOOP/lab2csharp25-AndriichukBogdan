@@ -128,37 +128,46 @@
                 
             }
 
-            void task4(){
+            void task4(){            
                 Console.WriteLine("Enter size(number of rows):");
                 int rows = Convert.ToInt32(Console.ReadLine());
                 int[][] Arr = new int[rows][];
                 int maxRow = 0;
-                for(int i = 0; i<rows;i++){
-                    Console.WriteLine("Enter size of "+(i+1)+" row");
+
+                for (int i = 0; i < rows; i++)
+                {
+                    Console.WriteLine("Enter size of " + (i + 1) + " row");
                     int row = Convert.ToInt32(Console.ReadLine());
                     Arr[i] = new int[row];
-                    for(int j = 0;j<row;j++){
-                        Console.WriteLine("Arr["+i+"]"+"["+j+"]");
+
+                    for (int j = 0; j < row; j++)
+                    {
+                        Console.WriteLine("Arr[" + i + "][" + j + "]");
                         Arr[i][j] = Convert.ToInt32(Console.ReadLine());
                     }
-                    if(row>maxRow) maxRow = row;
-                    
+
+                    if (row > maxRow) maxRow = row;
                 }
 
-                int [] Result = new int [maxRow];
+                int[] Result = new int[maxRow];
 
-                for(int j = 0;j<maxRow;j++){
-                    int min = Arr[0][j];
-                    for(int i = 0; i < rows;i++){
-                        if(Arr[i].Length<=j) continue;
-                        if(min>Arr[i][j]) min = Arr[i][j];
+                for (int j = 0; j < maxRow; j++)
+                {
+                    int min = int.MaxValue;
+                    for (int i = 0; i < rows; i++)
+                    {
+                        if (Arr[i].Length <= j) continue;
+                        if (min > Arr[i][j]) min = Arr[i][j];
                     }
-                    Result[j]=min;
+                    Result[j] = min;
                 }
 
-                for(int i = 0 ; i<maxRow;i++){
-                    Console.WriteLine("Result["+i+"]="+Result[i]);
+                for (int i = 0; i < maxRow; i++)
+                {
+                    Console.WriteLine("Result[" + i + "]=" + Result[i]);
                 }
+
+
             }
 
 
